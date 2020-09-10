@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="maim.js"></script>
+    <script src="maim.js"></script>   
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="C:\Users\annab\Desktop\Quiz\maim.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="w-100 vh-100 d-flex justify-content-center">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-sm-8 quiz-col mx-auto h-25" id="start-container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h2 class="mb-3">You Will Have 10 second to answer each quistion</h2>
+                            <button class="btn btn-primary btn-lg mx-auto" id="start-btn">Start Quiz</button>
+                        </div>
+                    </div>
+                    
+                </div>
+    <div class="col-sm-8 quiz-col mx-auto h-75 d-none" id="quiz container">
+        <div class="row">
+            <div class="col-sm-4 mb-2 mix-auto">
+                </div>
+                </div>
+    <div class="row mb-2">
+            <div class="col-sm-12 d-flex justify-content-center">
+                <h2 id="quistion"></h2>
+                </div>
+                </div>
+    <div class="row d-flex justify-content-center quistion-row">
+        <div class="col-sm-3 choice-col">
+            <a class="choice" id="choice-a" onclick="checkAnswer('A')"></a>
+                 </div>
+    <div class="col-sm-3 choice-col">
+            <a class="choice" id="choice-b" onclick="checkAnswer('B')"></a>
+                 </div>
+
+    <div class="col-sm-3 choice-col">
+            <a class="choice" id="choice-a" onclick="checkAnswer('C')"></a>
+                 </div>
+    <div class="row d-flex flex-row flex-wrap justify-content-between">
+    <div id="timer">
+        <div id="counter"></div>
+        <div id="btimeGauge"></div>
+        <div id="timeGauge"></div>
+                 </div>
+    <div id="progress"></div>
+                 </div>
+    <div class="col-sm-8 quiz-col h-50 mx-auto d-none" id="score">
+    <div class="row">
+    <div class="col-sm-12 text-center">
+                    <h2 class="mb-3" id="score-content"></h2>
+                 </div>
+    <div class="col-sm-6 mx-auto text-center">
+            <p class="lead">Enter your name to record your name score!</p>
+    <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter your initials" id="user-name">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" id="submit-score">Submit</button>
+                 </div>
+                      </div>
+                            </div>
+                                   </div>
+                                          </div>
+        <div class="col-sm-8 quiz-col h-50 mx-auto d-none" id="high-score-container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2 class="mb-3">High Scores</h2>
+                    <ul>
+                    </ul>
+                </div>
+                      </div>
+                            </div>
+                                   </div>
+                                          </div>
+                                                  </div>
+    
+    
+                                     
+</body>
+</html>
